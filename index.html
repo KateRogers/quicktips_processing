@@ -138,36 +138,35 @@
 						</ol>
 					</p>
 				</section> 
-				<section id="data_processing_covid19" data-menu-title="Processing COVID-19 Data">
+				<section id="data_processing_covid19" data-menu-title="Messy COVID-19 Data">
 					<div class="header_bar centreblue">
 						<div class="header_title">01</div>
 					</div>
-					<h4>Processing COVID-19 Data</h4>
-					<p class="text-small">Pristine data is very rare, and COVID-19 data is no exception. 
+					<h4>Messy COVID-19 Data</h4>
+					<p class="text-small">With so much data being shared about the pandemic, we often want to jump in and find the insight. But remember, pristine data is very rare, and COVID-19 data is no exception. Before we analyse, we have to process messy COVID-19 data because: 
 					</p>
 					<p class="text-small">
 						<ol class="text-small">
-							<li>There may be is missing data or errors in the data. </li>
+							<li>There may be missing data or errors in the data. </li>
 							<li>The data may come in an odd shape, (e.g. a ‘wide’ data format). </li>
-							<li> Data sources such as the World Health Organisation and Johns Hopkins University amay be reporting different numbers of cases.</li>
-							<li>Critical data points for analysis may be stored in different files, (e.g. the 	number of tests and the confirmed cases).</li>	
-							<li>Different names for countries or date formats may be used.</li>
+							<li> Data sources may be reporting different numbers of cases due to their different appraoches to collection.</li>
+							<li>Critical data points for analysis will be stored in different files, (e.g. the number of tests and the confirmed cases) and need to be brought together.</li>	
+							<li>Different names for locations or date formats may be used.</li>
 						</ol>
 					</p>
 				</section>
-				<section>
 					<section id="data_verification" data-menu-title="Data Verification">
 						<div class="header_bar centreblue">
 							<div class="header_title">01</div>
 						</div>
-						<h4>Data Verification</h4>
-						<p class="text-small">Before analysing data, it is important to understand what the data in your spreadsheet is actually measuring to ensure that you have the data you need. That is why we verify data. We check the metadata, assess the collection methodology and read through the data dictionary to better understand what the data in our spreadsheet measures. 
+						<h4>Start with Data Verification</h4>
+						<p class="text-small">Before analysing data, it is important to understand what the data in your spreadsheet is actually measuring. That is why we always check the metadata, assess the collection methodology and read through the data dictionary first. This way we understand what is and is being represented by the data in our spreadsheet. 
 						</p>
 						<div class="img-large">
 							<img src="pics/data_verification.png" alt="cleaning" class="no_shadow"/>
 						</div>
 					</section> 
-					<section id="metadata_HDX" data-menu-title="Verifying COVID-19 Data Metadata">
+					<!-- <section id="metadata_HDX" data-menu-title="Verifying COVID-19 Data Metadata">
 						<div class="header_bar centreblue">
 							<div class="header_title">01</div>
 						</div>
@@ -183,14 +182,13 @@
 						</p>
 						<p class="text-small">When in doubt, contact the source. If you do not understand what the data represents, it's impossible to analyse it properly. The better the documentation, the easier it will be to verify your data.
 						</p>
-					</section> 
-				</section>
+					</section>  -->
 					<section id="data_cleaning" data-menu-title="Data Cleaning">
 						<div class="header_bar centreblue">
 							<div class="header_title">01</div>
 						</div>
-						<h4>Data Cleaning</h4>
-						<p class="text-small">Data cleaning is the process of correcting and standardising data from a record set, table, or database. It broadly consists of detecting, correcting, replacing, modifying or removing messy data.
+						<h4>Next to Start Data Cleaning</h4>
+						<p class="text-small">Data cleaning is the process of correcting and standardising data from a record set, table, or database. It broadly consists of detecting, correcting, replacing, modifying or removing messy data. If often feels like the work of data cleaning is never done. 
 						</p>
 						<div class="img-large">
 							<img src="pics/cleaning_process_hor2.png" alt="cleaning" class="no_shadow"/>
@@ -200,17 +198,17 @@
 						<div class="header_bar centreblue">
 							<div class="header_title">01</div>
 						</div>
-						<h4>Cleaning COVID-19 Data</h4>
+						<h4>Cleaning COVID-19 Case Data</h4>
 						<p class="text-small">After downloading the Johns Hopkins University COVID-19 confirmed case dataset and screening for errors, there are a few issues that jump out. </p> 
 						<p class="text-small">
 							<ol class="text-small">
 								<li>There is subnational data for certain countries but not others. We may want to remove the subnational data if we do not need it. </li>
-								<li>The Diamond Princess Cruise Ship is reported as a country; and</li>
-								<li>The date formats are inconsistant; and</li>
-								<li>There is data on many countries that we are not interested in for our analysis.</li>
+								<li>The Diamond Princess Cruise Ship is reported as a country. How should we deal with that?; </li>
+								<li>The date formats are inconsistant. We need to fix that; and</li>
+								<li>There is data on many countries that we are not interested in for our analysis. We may want to delete the data we do not need.</li>
 							</ol>
 						</p>
-						<p class="text-small">Before doing anything, back up the original data. Then, its time to start editing and removing messy data for our file. 
+						<p class="text-small"> Remember. before doing anything, back up the original data. Then, your can start editing and removing messy data for our file with peace of mind. 
 						</p>
 					</section> 
 				</section>
@@ -220,13 +218,13 @@
 							<div class="header_title">01</div>
 						</div>
 						<h4>What is Data Validation?</h4>
-						<p class="text-small">Data validation is essentially a set of checks to ensure that the data we have is in a standardised format and is meaningful. There are many types of data validation checks we could perform, for example: 
+						<p class="text-small">Data validation is essentially the steps we take to ensure that the data we have is in a standardised format and is meaningful. There are many types of data validation checks we could perform, for example: 
 						</p>
 						<p class="text-small">
 							<ol class="text-small">
-								<li><b>A presence checks</b> to ensure there is no missing data; </li>
+								<li><b>A presence check</b> to ensure there is no missing data; </li>
 								<li><b>A format checks</b> to ensure that data is in a standardised format, e.g. YYYY-MM-DD; </li>
-								<li><b>A type checks</b> to ensure the correct data type has been entered, e.g. confirmed cases is a number not a string; and </li>
+								<li><b>A type check</b> to ensure the correct data type has been entered, e.g. confirmed cases is a number not a string; and </li>
 								<li><b>A range check</b> to ensure that a value falls within the specified or meaningful range, e.g. the number of confirmed cases is positive; </li>
 							</ol>
 						</p>
@@ -261,6 +259,7 @@
 				</div>
 				<h4>Transforming & Merging Data</h4>
 				<p class="text-small">Data validation, verifying and cleaning help to ensure that the data we have is good enough for our analysis. However, even once our data is ‘good enough’, there is more processing work to be done. We will often have to reshape and bring together different datasets in order to do our analysis. 
+				</p>
 				<p class="text-small"> 
 					<ol class="text-small">
 						<li>Transforming data involves converting data from one format or structure to another. In this section, you'll learn about data strcutures and how to transform data from wide to long and long to wide based on your needs.</li>
@@ -276,7 +275,7 @@
 				<p class="text-small"> In tabular data every column of a table represents a particular variable and each row corresponds to a given record, or observation. 
 					<ol class="text-small">
 						<li>A variable contains all values that measure the same attribute or characteristic. </li>
-						<li>An observation contains all values measured on the same unit.</li>
+						<li>A record, or observation, contains all values measured on it.</li>
 					</ol>
 				</p>
 			</section>
@@ -285,7 +284,7 @@
 					<div class="header_title">02</div>
 				</div>
 				<h4> Transforming Your Data's Structure</h4>
-				<p class="text-small">In the example below, we have two distinct data structures for the same data. One is ‘wide’ and the other is‘long’. The long dataset keeps 'location', 'date' and 'confirmed cases' as distinct variables while the wide dataset combines 'date' with the value variable 'confirmed cases'. </p>
+				<p class="text-small">In the example below, we have two distinct data structures for the same data. One is ‘wide’ and the other is‘long’. </p>
 				<div class="img-large">
 					<img src="pics/wide_long.png" alt="cleaning" class="no_shadow"/>
 				</div>
@@ -309,7 +308,7 @@
 					<div class="header_title">02</div>
 				</div>
 				<h4>Wide Data Limitations</h4>
-				<p class="text-small">In the JHU dataset, the dates are a column headers. This means that the column headers in this dataset are value (the specific date) rather than the name of variable (Date). This is quite a common practice for displaying data in tables but it can make working with the data difficult. 
+				<p class="text-small">In the JHU dataset, the dates are a column headers. In this format, the 'date' variwith the value variable 'confirmed cases'. This means that the column headers in this dataset are value (the specific date) rather than the name of variable (Date). This is quite a common practice for displaying data in tables but it can make working with the data difficult. The long dataset keeps 'location', 'date' and 'confirmed cases' as distinct variables while the wide 
 				</p>
 				<p class="text-small">Adding additional variables to a wide data stucture can quickly become unwieldy. Imagine adding confirmed deaths, number of tests performed etc. to this dataset without a column for date.
 				</p>
@@ -321,7 +320,7 @@
 					<div class="header_title">02</div>
 				</div>
 				<h4>What is Long Data?</h4>
-				<p class="text-small">Long data is, as the name suggests, longer with more rows and less columns. Each value sits in an own row meaning there is a row of data for each country on each day we have data for. This format is also referred to as narrow, tall, stacked or tidy data. While it can be less ‘human-readable’, it is often more straightforward to work with and analyse data in this format. 
+				<p class="text-small">Long data is, as the name suggests, longer with more rows and less columns. Each value sits in an own row meaning there is a row of data for each country on each day we have data for. This format is also sometimes referred to as narrow, tall, stacked or tidy data. While it can be less ‘human-readable’, it is often more straightforward to work with and analyse data in this format. 
 				</p>
 				<div class="img-standard">
 					<img src="pics/long_example.png" alt="Long Data" class="no_shadow"/>
@@ -332,7 +331,7 @@
 					<div class="header_title">02</div>
 				</div>
 				<h4>Adding Variables to Long Data</h4>
-				<p class="text-small"> One of the benefits of long data is that it makes it easier to add additional variables with each new variable forming an additional column. Likewise, we can have col
+				<p class="text-small"> One of the benefits of long data is that it makes it easier to add additional variables. For each new variable, we simply add an additional column. Likewise, we can have col
 				</p>
 				<div class="img-standard">
 					<img src="pics/long_variables.png" alt="nav_arrows" class="no_shadow"/>
@@ -448,7 +447,7 @@
 					</ol>
 				</p>
 			</section>
-			<section id="Comparing Data Sources" data-menu-title="Comparing Data Sources">
+			<!-- <section id="Comparing Data Sources" data-menu-title="Comparing Data Sources">
 				<div class="header_bar centrered">
 					<div class="header_title">02</div>
 				</div>
@@ -463,10 +462,10 @@
 				<div class="header_bar centrered">
 					<div class="header_title">02</div>
 				</div>
-				<h4>Bringing Together Different Facets</h4>
+				<h4>Bringing Together Different Indicators</h4>
 				<p class="text-small">We want to analyse reported COVID-19 cases, the Inform Risk Index serveirty score and the COVID-19 Global Humanitarian Response Plan funding requirements for different countries. To do this we have to pull togteher three distinct datasets. 
 				</p>
-			</section>
+			</section> -->
 			<section id="When_to_Merge" data-menu-title="When to Merge Data">
 				<div class="header_bar centrered">
 					<div class="header_title">02</div>
@@ -549,7 +548,7 @@
                     <div class="header_title">03</div>
                 </div>
                 <h4>Let's Put it All Together</h4>
-				<p class="text-small"> In this next section, we will walk through the steps of processing
+				<p class="text-small"> In this next section, we will walk through a few of the steps of data processing using diffent COVID-19 datasets. 
 					<ol class="text-small">
 						<li>Download COVID19 Case, funding and Inform Risk data from HDX</li>
 						<li>Clean all three datasets.</li>
@@ -559,6 +558,52 @@
 					</ol>
 				</p>
 			</section>
+			<section id="relationship_types" data-menu-title="Relationship Types">
+            	<div class="header_bar centrered">
+                    <div class="header_title">03</div>
+                </div>
+                <h4>Download the Data</h4>
+				<p class="text-small"> The Humanitarian Data Exchange is a open data portal with over 20,000 datasets and a great source for finding data. For this work, we are interested in working with data on COVID-19 cases (both from JHU & WHO) and the inform risk index. 
+					<ol class="text-small">
+						<li>Download COVID19 Case and Inform Risk data from HDX</li>
+						<li>Clean the data.</li>
+						<li>Reshape the data to the structure we need</li>
+						<li>Merging Data</li>
+						<li>Explore data through exploratory data visualisation</li>
+					</ol>
+				</p>
+			</section>
+			<section id="doityourself_cleaning" data-menu-title="Do It Yourself Cleaning">
+            	<div class="header_bar centrered">
+                    <div class="header_title">03</div>
+                </div>
+                <h4>JHU Data Validation</h4>
+				<p class="text-small"> We've verified the data sources and now we need to clean them. 
+					<ol class="text-small">
+						<li></li>
+						<li>Clean all three datasets.</li>
+						<li>Merging Data</li>
+						<li>Reshape the data to the structure we need</li>
+						<li>Explore data through exploratory data visualisation</li>
+					</ol>
+				</p>
+			</section>
+			<section id="doityourself_cleaning" data-menu-title="Do It Yourself Cleaning">
+            	<div class="header_bar centrered">
+                    <div class="header_title">03</div>
+                </div>
+                <h4>Cleaning</h4>
+				<p class="text-small"> 
+					<ol class="text-small">
+						<li>Download COVID19 Case, funding and Inform Risk data from HDX</li>
+						<li>Clean all three datasets.</li>
+						<li>Merging Data</li>
+						<li>Reshape the data to the structure we need</li>
+						<li>Explore data through exploratory data visualisation</li>
+					</ol>
+				</p>
+			</section>
+
 		<!-- SECTION 4 Best Practice -->
 			</div>
 		</div>
