@@ -47,13 +47,13 @@
                     <div class="header_bar centregreen">
                         <div class="header_title">Introduction</div>
                     </div>
-					<p class="text-small">Perfect data does not exist. When we talk about working with data, we are often focus data collection, data analysis and data visualisation. However, any data scientist will tell you that the bulk of their time is spent on data verification, data cleaning and otherwise ‘processing’ the data.  </p>
+					<p class="text-small">Perfect data does not exist. When we talk about working with data, we often focus on data collection, data analysis and data visualisation. However, any data scientist will tell you the bulk of their time is spent on data verification, data cleaning and otherwise ‘processing’ the data.  </p>
 					<p class="text-small">The ability to quickly and seamlessly transform and merge data is a critical step in moving from raw data to actionable insight.</p>
 					<p class="text-small">In this introductory session to processing data using examples from the COVID-19 pandemic, you will learn:
 						<ol class="text-small">
 							<li>The basic steps of data processing;</li>
-							<li>How to tranform your data's stucture to facilitate analysis; and</li>
-							<li>How to merge datasets using Lookup Formauls.</li>
+							<li>How to transform your data's structure to facilitate analysis; and</li>
+							<li>How to merge datasets using Lookup Formulas.</li>
 						</ol>
 					</p>
 				</section>
@@ -86,7 +86,7 @@
                 	    </div>
 						<p class="text-small">The progress bar at the bottom of your screen lets you know where you are in the session. If you would like to skip through the pages, you can do this using the navigation menu at the bottom left of your screen.
 						</p>
-						<p class="text-small"> Each page introduces a tip, concept or best practice for visualising data during the COVID-19 pandemic. Scroll through the pages using your keyboard or by clicking on the right and left arrows at the bottom right of your screen.
+						<p class="text-small"> Each page introduces a tip, concept or best practice for processing data during the COVID-19 pandemic. Scroll through the pages using your keyboard or by clicking on the right and left arrows at the bottom right of your screen.
 						</p>
 						<p class="text-small"> On certain pages, there is the option to scroll down to learn more about a particular topic. Navigate to these vertical pages using the down arrow on your keyboard or by clicking on the down arrow at the bottom right of your screen.
 						</p>
@@ -116,8 +116,8 @@
                         <div class="header_title">01</div>
                     </div>
                     <h4>Data Management Process</h4>
-                    <p class="text-small"> A data management process is an approach to working with data from the planning of a data exercise to destruction or retention of the data gathered.</p>
-					<p class="text-small">No matter the scope of the data exercise, working with data always involves a series of non-linear steps that help us systematically define and plan our goals, gather data, prepare and analyse that data and ultimately use it to drive data-informed actions. 
+                    <p class="text-small"> A data management process is an approach to working with data, from the planning of a data exercise to destruction or retention of the data gathered.</p>
+					<p class="text-small">No matter the scope of the data exercise, working with data always involves a series of non-linear steps that help us systematically define our goals and plan, gather data, prepare and analyse that data, and ultimately use it to drive data-informed actions. 
 					</p>
 					<div class="img-med">
 						<img src="pics/RD_DMP .jpeg" alt="dmp" class="no_shadow"/>
@@ -129,7 +129,7 @@
                         <div class="header_title">01</div>
                     </div>
                     <h4>The Goal of Data Processing</h4>
-					<p class="text-small">Data processing is an umbrella term that refers to the methods for collating and manipulating data to meet analytical requirements. Data processing is all the steps required to take data from its raw, often messy, form and prepare it for analysis. Data procesing includes: 
+					<p class="text-small">Data processing is an umbrella term that refers to the methods for collating and manipulating data to meet analytical requirements. Data processing is all the steps required to take data from its raw, often messy, form and prepare it for analysis. Data processing includes: 
 						<ol class="text-small">
 							<li><b>verifying data</b>: The process of checking data for accuracy, authenticity and reliability;</li>
 							<li><b>cleaning data</b>: The process of correcting and standardising data from a record set, table, or database. </li>
@@ -149,7 +149,7 @@
 						<ol class="text-small">
 							<li>There may be missing data or errors in the data. </li>
 							<li>The data may come in an odd shape, (e.g. a ‘wide’ data format). </li>
-							<li> Data sources may be reporting different numbers of cases due to their different appraoches to collection.</li>
+							<li>Data sources may be reporting different numbers of cases due to their different approaches to collection.</li>
 							<li>Critical data points for analysis will be stored in different files, (e.g. the number of tests and the confirmed cases) and need to be brought together.</li>	
 							<li>Different names for locations or date formats may be used.</li>
 						</ol>
@@ -160,7 +160,7 @@
 							<div class="header_title">01</div>
 						</div>
 						<h4>Start with Data Verification</h4>
-						<p class="text-small">Before analysing data, it is important to understand what the data in your spreadsheet is actually measuring. That is why we always check the metadata, assess the collection methodology and read through the data dictionary first. This way we understand what is and is being represented by the data in our spreadsheet. 
+						<p class="text-small">Before analysing data, it is important to understand what the data in your spreadsheet is actually measuring. That is why we always check the metadata, assess the collection methodology and read through the data dictionary first. This way we understand what is and is not being represented by the data in our spreadsheet.
 						</p>
 						<div class="img-large">
 							<img src="pics/data_verification.png" alt="cleaning" class="no_shadow"/>
@@ -188,7 +188,7 @@
 							<div class="header_title">01</div>
 						</div>
 						<h4>Next to Start Data Cleaning</h4>
-						<p class="text-small">Data cleaning is the process of correcting and standardising data from a record set, table, or database. It broadly consists of detecting, correcting, replacing, modifying or removing messy data. If often feels like the work of data cleaning is never done. 
+						<p class="text-small">Data cleaning is the process of correcting and standardising data from a record set, table, or database. It broadly consists of detecting, correcting, replacing, modifying or removing messy data. It often feels like the work of data cleaning is never done. 
 						</p>
 						<div class="img-large">
 							<img src="pics/cleaning_process_hor2.png" alt="cleaning" class="no_shadow"/>
@@ -199,20 +199,19 @@
 							<div class="header_title">01</div>
 						</div>
 						<h4>Cleaning COVID-19 Case Data</h4>
-						<p class="text-small">After downloading the Johns Hopkins University COVID-19 confirmed case dataset and screening for errors, there are a few issues that jump out. </p> 
+						<p class="text-small">If we download the Johns Hopkins University COVID-19 confirmed case dataset and screen for errors, there are a few issues that jump out. </p> 
 						<p class="text-small">
 							<ol class="text-small">
-								<li>There is subnational data for certain countries but not others. We may want to remove the subnational data if we do not need it. </li>
+								<li>There is subnational data for certain countries but not others. We may want to remove the subnational data if we do not need it; </li>
 								<li>The Diamond Princess Cruise Ship is reported as a country. How should we deal with that?; </li>
-								<li>The date formats are inconsistant. We need to fix that; and</li>
+								<li>The date formats are inconsistent. We need to fix that.; and</li>
 								<li>There is data on many countries that we are not interested in for our analysis. We may want to delete the data we do not need.</li>
 							</ol>
 						</p>
-						<p class="text-small"> Remember. before doing anything, back up the original data. Then, your can start editing and removing messy data for our file with peace of mind. 
+						<p class="text-small"> Before doing anything, back up the original data. Then, you can start editing and removing messy data for your file with peace of mind.
 						</p>
 					</section> 
 				</section>
-				<section>
 					<section id="data_validation" data-menu-title="Data Validation">
 						<div class="header_bar centreblue">
 							<div class="header_title">01</div>
@@ -223,31 +222,14 @@
 						<p class="text-small">
 							<ol class="text-small">
 								<li><b>A presence check</b> to ensure there is no missing data; </li>
-								<li><b>A format checks</b> to ensure that data is in a standardised format, e.g. YYYY-MM-DD; </li>
+								<li><b>A format check</b> to ensure that data is in a standardised format, e.g. YYYY-MM-DD; </li>
 								<li><b>A type check</b> to ensure the correct data type has been entered, e.g. confirmed cases is a number not a string; and </li>
-								<li><b>A range check</b> to ensure that a value falls within the specified or meaningful range, e.g. the number of confirmed cases is positive; </li>
+								<li><b>A range check</b> to ensure that a value falls within the specified or meaningful range, e.g. the number of confirmed cases is positive. </li>
 							</ol>
 						</p>
 						<p class="text-bottom"> Press down to see an example of each.</p>
 					</section> 
-					<section id="validating_covid19" data-menu-title="Validating COVID19 Data">
-						<div class="header_bar centreblue">
-							<div class="header_title">01</div>
-						</div>
-						<h4>Validating COVID19 Data</h4>
-						<p class="text-small">In the Johns Hopkins University confirmed cases dataset, we would run the following data validation checks. 
-						</p>
-						<p class="text-small">
-							<ol class="text-small">
-								<li>We do a presence check to see if for each column there is data entered; </li>
-								<li>We do a type check to ensure that the data is in a numeric format and not text format; </li>
-								<li>We do a format check to ensure that the dates are using the desired date convention, in this case YYYY-MM-DD; and </li>
-								<li>We do a range check to verify that we only have data on the desired time period and that the case data is positive. </li>
-							</ol>
-						</p>
-					</section> 
-				</section>	
-		<!-- SECTION 2 Transform and Merge -->
+			<!-- SECTION 2 Transform and Merge -->
 			<section id="undertstand_data" data-background="#f2645a" data-menu-title="Understand the Data">
 				<div class="title_container">
 					<h1 class="white">How to Transform and Merge Data</h1>
@@ -262,8 +244,8 @@
 				</p>
 				<p class="text-small"> 
 					<ol class="text-small">
-						<li>Transforming data involves converting data from one format or structure to another. In this section, you'll learn about data strcutures and how to transform data from wide to long and long to wide based on your needs.</li>
-						<li>Merging data involves bringing two or more data sources together. We do this in order to compare data more easily as well as to complete it when the data we need sits in different files. In this section, you'll learn how to merge data using lookup formulas.</li>
+						<li>Transforming data involves converting data from one format or structure to another. In this section, you'll learn about data structures and how to transform data from wide to long and long to wide based on your needs.</li>
+						<li>Merging data involves bringing two or more data sources together. We do this to compare data more easily as well as to complete it when the data we need sits in different files. In this section, you'll learn how to merge data using lookup formulas..</li>
 					</ol>
 				</p>
 			</section>
@@ -284,7 +266,7 @@
 					<div class="header_title">02</div>
 				</div>
 				<h4> Transforming Your Data's Structure</h4>
-				<p class="text-small">In the example below, we have two distinct data structures for the same data. One is ‘wide’ and the other is‘long’. </p>
+				<p class="text-small">In the example below, we have two distinct data structures for the same data. One is wide and the other is long. Depending on what you want to do with your data and the tools that you will use, one format might be preferable to the other. Knowing how to transform your data's structure is an important part of efficient data processing. </p>
 				<div class="img-large">
 					<img src="pics/wide_long.png" alt="cleaning" class="no_shadow"/>
 				</div>
@@ -295,7 +277,7 @@
 					<div class="header_title">02</div>
 				</div>
 				<h4>What is Wide Data?</h4>
-				<p class="text-small">In a wide data format tends to make it more ‘human readable'. It is a common data stucture for humanitarian data as survey tools will usually output results in this one-row-per-respondent format with a different column for each question.
+				<p class="text-small">In a wide format each column represents a different variable. It data tends to make it more ‘human readable'. It is a common data structure for humanitarian data, as survey tools will usually output results in this one-row-per-respondent format with a different column for each question (variable).
 				</p>
 				<p class="text-small"> This is the data structure required for creating charts like line graphs in spreadsheet software. 
 				<div class="img-standard">
@@ -308,7 +290,7 @@
 					<div class="header_title">02</div>
 				</div>
 				<h4>Wide Data Limitations</h4>
-				<p class="text-small">In the JHU dataset, the dates are a column headers. In this format, the 'date' variwith the value variable 'confirmed cases'. This means that the column headers in this dataset are value (the specific date) rather than the name of variable (Date). This is quite a common practice for displaying data in tables but it can make working with the data difficult. The long dataset keeps 'location', 'date' and 'confirmed cases' as distinct variables while the wide 
+				<p class="text-small">In the JHU dataset, the column headers are values of the 'date' variable. This is quite a common practice for displaying data in tables but it can make working with the data difficult combersom. The long dataset keeps 'location', 'date' and 'confirmed cases' as distinct variables while the wide 
 				</p>
 				<p class="text-small">Adding additional variables to a wide data stucture can quickly become unwieldy. Imagine adding confirmed deaths, number of tests performed etc. to this dataset without a column for date.
 				</p>
@@ -320,7 +302,7 @@
 					<div class="header_title">02</div>
 				</div>
 				<h4>What is Long Data?</h4>
-				<p class="text-small">Long data is, as the name suggests, longer with more rows and less columns. Each value sits in an own row meaning there is a row of data for each country on each day we have data for. This format is also sometimes referred to as narrow, tall, stacked or tidy data. While it can be less ‘human-readable’, it is often more straightforward to work with and analyse data in this format. 
+				<p class="text-small">Long data is, as the name suggests, longer with more rows and less columns. One column can represent different variables with a corresponding column for their respective values. This format is also referred to as narrow, tall, stacked or tidy data. It is often more straightforward to work with and analyse data in this format. 
 				</p>
 				<div class="img-standard">
 					<img src="pics/long_example.png" alt="Long Data" class="no_shadow"/>
@@ -331,110 +313,13 @@
 					<div class="header_title">02</div>
 				</div>
 				<h4>Adding Variables to Long Data</h4>
-				<p class="text-small"> One of the benefits of long data is that it makes it easier to add additional variables. For each new variable, we simply add an additional column. Likewise, we can have col
+				<p class="text-small"> One of the benefits of long data is that it makes it easier to add additional variables. By creating a 'Type' column we can store many different variables (Confirmed Deaths, Confirmed Cases) in the same column. 
 				</p>
 				<div class="img-standard">
 					<img src="pics/long_variables.png" alt="nav_arrows" class="no_shadow"/>
 				</div>
 			</section>
 		</section>
-		<section>
-			<section id="unpivot" data-menu-title="(Un)Pivoting Data">
-				<div class="header_bar centrered">
-					<div class="header_title">02</div>
-				</div>
-				<h4>(Un)Pivoting Data</h4>
-				<p class="text-small">Using PowerQuery, we can quickly and easily transform columns into rows. This is called 'unpivoting' in Microsoft tools. 
-				</p>
-			</section>
-			<section id="unpivot" data-menu-title="(Un)Pivoting Data Step 1">
-				<div class="header_bar centrered">
-					<div class="header_title">02</div>
-				</div>
-				<h4>(Un)Pivoting: Insert a Table</h4>
-				<p class="text-small">Tables are a simple and easy way to work with data in excel. Simply go to ‘Insert’, click on ‘Table’ and select the data that you want to include in your data table. If you want to name the table go to the ‘Design’ tab and add a table name.
-				</p>
-				<div class="img-standard">
-					<img src="pics/pq_transform_1.png" alt="nav_arrows" class="no_shadow"/>
-				</div>
-			</section>
-			<section id="unpivot" data-menu-title="(Un)Pivoting Data Step 2">
-				<div class="header_bar centrered">
-					<div class="header_title">02</div>
-				</div>
-				<h4>(Un)Pivoting: Open Data in PowerQuery Editor</h4>
-				<p class="text-small">PowerQuery is a tool built into Excel that allows you to import data from many different sources and then clean, transform and reshape it as needed. To open our data in the PowerQuery editor, simple go to the ‘Data’ tab. In the ‘Get & Transform’ section, click on the table icon. 
-				</p>
-				<div class="img-standard">
-					<img src="pics/pq_transform_2.png" alt="nav_arrows" class="no_shadow"/>
-				</div>
-			</section>
-			<section id="unpivot" data-menu-title="(Un)Pivoting Data Step 3">
-				<div class="header_bar centrered">
-					<div class="header_title">02</div>
-				</div>
-				<h4>(Un)Pivoting: Transform Data</h4>
-				<p class="text-small">Now that you have the data loaded into the PowerQuery editor, we want to transform it. The first step is to select <b>all of the date columns</b>.Selected columns will be green. Next, go to the ‘Transform’ tab and click ‘Unpivot Columns’. Finally, rename the new columns (Attribute → Date, Value → Confirmed Cases). 
-				</p>
-				<div class="img-standard">
-					<img src="pics/pq_transform_3.png" alt="nav_arrows" class="no_shadow"/>
-				</div>
-			</section>
-			<section id="unpivot" data-menu-title="(Un)Pivoting Data Step 4">
-				<div class="header_bar centrered">
-					<div class="header_title">02</div>
-				</div>
-				<h4>(Un)Pivoting: Close & Load</h4>
-				<p class="text-small">Now that the data is in the shape we want, we want to load it to a new worksheet in our excel file. To do this, simply go to the ‘Home’ tab and select ‘Close and Load to’. You can decide where you want to send this new data. For us, a new worksheet will do. Voila, you have transformed your wide data into long data.
-				</p>
-				<div class="img-standard">
-					<img src="pics/pq_transform_4.png" alt="nav_arrows" class="no_shadow"/>
-				</div>
-			</section>
-		</section>
-		<Section>
-			<section id="pivot" data-menu-title="Pivoting Data with PowerQuery & Pivot Tables">
-				<div class="header_bar centrered">
-					<div class="header_title">02</div>
-				</div>
-				<h4>Pivoting from Long to Wide</h4>
-				<p class="text-small">We can also use PowerQuery to just as quickly convert long data to wide data. This time, we are taking one row in our dataset and making the values in that row our column headers. 
-				</p>
-			</section>
-			<section id="pivot" data-menu-title="Pivoting Data with PowerQuery Step 1">
-				<div class="header_bar centrered">
-					<div class="header_title">02</div>
-				</div>
-				<h4>Pivoting with PowerQuery: Open Editor</h4>
-				<p class="text-small">Go to the ‘Data’ tab and click the table icon in the ‘Get and Transform’ section to pull our data into the PowerQuery editor. 
-				</p>
-				<div class="img-standard">
-					<img src="pics/pq_pivot_1.png" alt="nav_arrows" class="no_shadow"/>
-				</div>
-			</section>
-			<section id="pivot" data-menu-title="Pivoting Data with PowerQuery Step 1">
-				<div class="header_bar centrered">
-					<div class="header_title">02</div>
-				</div>
-				<h4>Pivoting with PowerQuery: Pivot Column</h4>
-				<p class="text-small">Select the 'Date' column, go to the ‘Transform’ tab and click ‘Pivot Column’. In the pop-up window, you'll see we are using the names in the date column to create new columns. Select 'confirmed cases' from the dropdown to use it for the values in the new columns.  
-				</p>
-				<div class="img-standard">
-					<img src="pics/pq_pivot_2.png" alt="nav_arrows" class="no_shadow"/>
-				</div>
-			</section>
-			<section id="pivot" data-menu-title="Pivoting Data with PowerQuery Step 3">
-				<div class="header_bar centrered">
-					<div class="header_title">02</div>
-				</div>
-				<h4>Pivoting with PowerQuery: Close & Load</h4>
-				<p class="text-small">Now that the data is in the shape we want, we simply load it to a new worksheet in our excel file. To do this, go to the ‘Home’ tab and select ‘Close and Load to’. You can decide where you want to send this new data.
-				</p>
-				<div class="img-standard">
-					<img src="pics/pq_pivot_3.png" alt="nav_arrows" class="no_shadow"/>
-				</div>
-			</section>
-		</Section>
 			<section id="Merging_Data" data-menu-title="Merging Data">
 				<div class="header_bar centrered">
 					<div class="header_title">02</div>
@@ -480,7 +365,7 @@
 					</ol>
 				</p>
 			</section>
-			<section id="lookup_formula" data-menu-title="Merging Data with Lookup Formulas">
+				<section id="lookup_formula" data-menu-title="Merging Data with Lookup Formulas">
 					<div class="header_bar centrered">
 						<div class="header_title">02</div>
 					</div>
@@ -497,9 +382,8 @@
 						<li>Return_Array: The column that you want to return when you find the lookup value. </li>
 					</ol>
 					</p>
-			</section>
-			<Section>
-				<section id="xlookup" data-menu-title="How to XLookup">
+				</section>
+				<!-- <section id="xlookup" data-menu-title="How to XLookup">
 					<div class="header_bar centrered">
 						<div class="header_title">02</div>
 					</div>
@@ -516,93 +400,199 @@
 						<li>Return_Array: The columns where the Inform COVID-19 Risk Score and Class data is stored (column F and G respectively)</li>
 					</ol>
 					</p>
-				</section>
-				<section id="pivot" data-menu-title="Lookup Formula Example">
-					<div class="header_bar centrered">
+				</section> -->
+		<!-- Putting it all Together -->
+			<section id="putting_it_all_together" data-background="#f2645a" data-menu-title="Putting it All Together">
+                <div class="title_container">
+                    <h1 class="white">Putting it All Together</h1>
+                </div>
+            </section>
+            <section id="do_it_yourself" data-menu-title="Do It Yourself">
+            	<div class="header_bar centregreen">
+                    <div class="header_title">03</div>
+                </div>
+                <h4>Let's Put it All Together</h4>
+				<p class="text-small"> In this next section, we will walk through a few of the steps of data processing using different COVID-19 datasets. 
+					<ol class="text-small">
+						<li>Download COVID19 case, funding and Inform Risk data from HDX</li>
+						<li>Verify and clean the data</li>
+						<li>Merging Data</li>
+						<li>Reshape the data to the structure we need</li>
+						<li>Explore data through exploratory data visualisation</li>
+					</ol>
+				</p>
+			</section>
+			<section id="doityourself_downloaddata" data-menu-title="Download the Data">
+            	<div class="header_bar centregreen">
+                    <div class="header_title">03</div>
+                </div>
+                <h4>Download the Data</h4>
+				<p class="text-small"> The Humanitarian Data Exchange is an open data portal with over 20,000 datasets and a great source for finding data. 
+				</p>
+			</section>
+			<section id="doityourself_datadictionary" data-menu-title="Check the Data Dictionary">
+            	<div class="header_bar centregreen">
+                    <div class="header_title">03</div>
+                </div>
+                <h4>Check the Metadata & Data Dictionary</h4>
+				<p class="text-small"> We have downloaded JHU confirmed cases, confirmed deaths and WHO. The numbers are slightly different in each so before we dig into our analysis, its worth checking the data dictionary on both to understand their respective appraoches to data collection. 
+				</p>
+			</section>
+			<section id="doityourself_removedata" data-menu-title="Do It Yourself Removing Data">
+            	<div class="header_bar centregreen">
+                    <div class="header_title">03</div>
+                </div>
+                <h4>Remove the Data that We Do Not Need</h4>
+				<p class="text-small"> After backing up our data, a helpful first step in the cleaning process is removing unneeded data. We are only interested in loncations with a Humanitarian Response Plan.  
+				</p>
+			</section>
+			<section id="doitwourself_validating" data-menu-title="Validating COVID19 Data">
+				<div class="header_bar centregreen">
+					<div class="header_title">03</div>
+				</div>
+				<h4>Validating COVID-19 Data</h4>
+				<p class="text-small">In the Johns Hopkins University confirmed cases dataset, we would run the following data validation checks. 
+				</p>
+				<p class="text-small">
+					<ol class="text-small">
+						<li>We do a presence check to see if data is entered for each cell; </li>
+						<li>We do a type check to ensure that the data is in a numeric format and not string format;								</li>
+						<li>We do a format check to ensure that the dates are using the desired date convention, in this case YYYY-MM-DD; and </li>
+						<li>We do a range check to verify that we only have data on the desired time period and that the case data is positive. </li>
+					</ol>
+				</p>
+			</section> 
+			<section>
+				<section id="doityourself_unpivot" data-menu-title="(Un)Pivoting Data">
+					<div class="header_bar centregreen">
 						<div class="header_title">02</div>
 					</div>
-					<h4>XLOOKUP Example </h4>
-					<p class="text-small">
+					<h4>Tranforming Data: Wide to Long</h4>
+					<p class="text-small">Using PowerQuery, we can quickly and easily transform columns into rows. This is called 'unpivoting' in Microsoft tools. Watch this video to learn how unpivot the JHU confirmed case and deaths data or press down for a step by step guide.   
+					</p>
+				</section>
+				<section id="doityourself_unpivot1" data-menu-title="(Un)Pivoting Data Step 1">
+					<div class="header_bar centregreen">
+						<div class="header_title">02</div>
+					</div>
+					<h4>(Un)Pivoting: Insert a Table</h4>
+					<p class="text-small">Tables are a simple and easy way to work with data in Excel. Simply go to ‘Insert’, click on ‘Table’ and select the data that you want to include in your data table. If you want to name the table go to the ‘Design’ tab and add a table name.
+					</p>
+					<div class="img-standard">
+						<img src="pics/pq_transform_1.png" alt="nav_arrows" class="no_shadow"/>
+					</div>
+				</section>
+				<section id="doityourself_unpivot2" data-menu-title="(Un)Pivoting Data Step 2">
+					<div class="header_bar centregreen">
+						<div class="header_title">02</div>
+					</div>
+					<h4>(Un)Pivoting: Open Data in PowerQuery Editor</h4>
+					<p class="text-small">PowerQuery is a tool built into Excel that allows you to import data from many different sources and then clean, transform and reshape it as needed. To open our data in the PowerQuery editor, simple go to the ‘Data’ tab. In the ‘Get & Transform’ section, click on the table icon. 
+					</p>
+					<div class="img-standard">
+						<img src="pics/pq_transform_2.png" alt="nav_arrows" class="no_shadow"/>
+					</div>
+				</section>
+				<section id="doityourself_unpivot3" data-menu-title="(Un)Pivoting Data Step 3">
+					<div class="header_bar centregreen">
+						<div class="header_title">02</div>
+					</div>
+					<h4>(Un)Pivoting: Transform Data</h4>
+					<p class="text-small">Now that you have the data loaded into the PowerQuery editor, we want to transform it. The first step is to select <b>all of the date columns</b>. Selected columns will be green. Next, go to the ‘Transform’ tab and click ‘Unpivot Columns’. Finally, rename the new columns (Attribute → Date, Value → Confirmed Cases). 
+					</p>
+					<div class="img-standard">
+						<img src="pics/pq_transform_3.png" alt="nav_arrows" class="no_shadow"/>
+					</div>
+				</section>
+				<section id="doityourself_unpivot4" data-menu-title="(Un)Pivoting Data Step 4">
+					<div class="header_bar centregreen">
+						<div class="header_title">02</div>
+					</div>
+					<h4>(Un)Pivoting: Close & Load</h4>
+					<p class="text-small">Now that the data is in the shape we want, we want to load it to a new worksheet in our excel file. To do this, simply go to the ‘Home’ tab and select ‘Close and Load to’. You can decide where you want to send this new data. For us, a new worksheet will do. Voila, you have transformed your wide data into long data.
+					</p>
+					<div class="img-standard">
+						<img src="pics/pq_transform_4.png" alt="nav_arrows" class="no_shadow"/>
+					</div>
+				</section>
+			</section>
+			<Section>
+				<section id="pivot" data-menu-title="Pivoting with PowerQuery">
+					<div class="header_bar centregreen">
+						<div class="header_title">02</div>
+					</div>
+					<h4>Transforming Data: Long to Wide</h4>
+					<p class="text-small">We can also use PowerQuery to just as quickly convert long data to wide data. Watch this video to see how its done. 
+					</p>
+				</section>
+				<section id="pivot" data-menu-title="Pivoting with PowerQuery Step 1">
+					<div class="header_bar centregreen">
+						<div class="header_title">02</div>
+					</div>
+					<h4>Pivoting with PowerQuery: Open Editor</h4>
+					<p class="text-small">Go to the ‘Data’ tab and click the table icon in the ‘Get and Transform’ section to pull our data into the PowerQuery editor. 
+					</p>
+					<div class="img-standard">
+						<img src="pics/pq_pivot_1.png" alt="nav_arrows" class="no_shadow"/>
+					</div>
+				</section>
+				<section id="pivot" data-menu-title="Pivoting with PowerQuery Step 1">
+					<div class="header_bar centregreen">
+						<div class="header_title">02</div>
+					</div>
+					<h4>Pivoting with PowerQuery: Pivot Column</h4>
+					<p class="text-small">Select the 'Date' column, go to the ‘Transform’ tab and click ‘Pivot Column’. In the pop-up window, you'll see we are using the names in the date column to create new columns. Select 'confirmed cases' from the dropdown to use it for the values in the new columns.  
 					</p>
 					<div class="img-standard">
 						<img src="pics/pq_pivot_2.png" alt="nav_arrows" class="no_shadow"/>
 					</div>
 				</section>
-				<section id="pivot" data-menu-title="Dragging the Formula">
-					<div class="header_bar centrered">
+				<section id="pivot" data-menu-title="Pivoting with PowerQuery Step 3">
+					<div class="header_bar centregreen">
 						<div class="header_title">02</div>
 					</div>
-					<h4>Dragging XLOOKUP Down</h4>
-					<p class="text-small">
+					<h4>Pivoting with PowerQuery: Close & Load</h4>
+					<p class="text-small">Now that the data is in the shape we want, we simply load it to a new worksheet in our excel file. To do this, go to the ‘Home’ tab and select ‘Close and Load to’. You can decide where you want to send this new data.
 					</p>
+					<div class="img-standard">
+						<img src="pics/pq_pivot_3.png" alt="nav_arrows" class="no_shadow"/>
+					</div>
 				</section>
 			</Section>
-		<!-- SECTION 4 Charts -->
-			<section id="chart_choices" data-background="#f2645a" data-menu-title="Choose the Right Visualisation">
-                <div class="title_container">
-                    <h1 class="white">Putting it All Together</h1>
-                </div>
-            </section>
-            <section id="relationship_types" data-menu-title="Relationship Types">
-            	<div class="header_bar centrered">
-                    <div class="header_title">03</div>
-                </div>
-                <h4>Let's Put it All Together</h4>
-				<p class="text-small"> In this next section, we will walk through a few of the steps of data processing using diffent COVID-19 datasets. 
-					<ol class="text-small">
-						<li>Download COVID19 Case, funding and Inform Risk data from HDX</li>
-						<li>Clean all three datasets.</li>
-						<li>Merging Data</li>
-						<li>Reshape the data to the structure we need</li>
-						<li>Explore data through exploratory data visualisation</li>
-					</ol>
+			<section id="doitwourself_mergePQ" data-menu-title="Merging with PowerQuery">
+				<div class="header_bar centregreen">
+					<div class="header_title">03</div>
+				</div>
+				<h4>Merging Data to Compare with PowerQuery</h4>
+				<p class="text-small"> Now that JHU and WHO data are both in long data formats, it will be easier to merge these two datasets to compare their numbers in our countries of interest.
 				</p>
-			</section>
-			<section id="relationship_types" data-menu-title="Relationship Types">
-            	<div class="header_bar centrered">
-                    <div class="header_title">03</div>
-                </div>
-                <h4>Download the Data</h4>
-				<p class="text-small"> The Humanitarian Data Exchange is a open data portal with over 20,000 datasets and a great source for finding data. For this work, we are interested in working with data on COVID-19 cases (both from JHU & WHO) and the inform risk index. 
-					<ol class="text-small">
-						<li>Download COVID19 Case and Inform Risk data from HDX</li>
-						<li>Clean the data.</li>
-						<li>Reshape the data to the structure we need</li>
-						<li>Merging Data</li>
-						<li>Explore data through exploratory data visualisation</li>
-					</ol>
+			</section> 
+			<section id="doitwourself_mergexlookup" data-menu-title="Merging with XLOOKUP">
+				<div class="header_bar centregreen">
+					<div class="header_title">03</div>
+				</div>
+				<h4>Merging Data to Complete with XLOOKUP</h4>
+				<p class="text-small"> For our map, we want our base layer to use the INFORM Risk Index scores. This time, we will use a XLOOKUP to add this to our COVID-19 case dataset.  
 				</p>
-			</section>
-			<section id="doityourself_cleaning" data-menu-title="Do It Yourself Cleaning">
-            	<div class="header_bar centrered">
-                    <div class="header_title">03</div>
-                </div>
-                <h4>JHU Data Validation</h4>
-				<p class="text-small"> We've verified the data sources and now we need to clean them. 
-					<ol class="text-small">
-						<li></li>
-						<li>Clean all three datasets.</li>
-						<li>Merging Data</li>
-						<li>Reshape the data to the structure we need</li>
-						<li>Explore data through exploratory data visualisation</li>
-					</ol>
+			</section> 
+			<section id="doitwourself_simplemap" data-menu-title="Create a Simple Map">
+				<div class="header_bar centregreen">
+					<div class="header_title">03</div>
+				</div>
+				<h4>Create a Simple Map</h4>
+				<p class="text-small"> Now that we have our data together, we can start to analyse and visualise it. Follow these simple steps to create an interactive map using Datawrapper. 
 				</p>
-			</section>
-			<section id="doityourself_cleaning" data-menu-title="Do It Yourself Cleaning">
-            	<div class="header_bar centrered">
-                    <div class="header_title">03</div>
-                </div>
-                <h4>Cleaning</h4>
-				<p class="text-small"> 
-					<ol class="text-small">
-						<li>Download COVID19 Case, funding and Inform Risk data from HDX</li>
-						<li>Clean all three datasets.</li>
-						<li>Merging Data</li>
-						<li>Reshape the data to the structure we need</li>
-						<li>Explore data through exploratory data visualisation</li>
-					</ol>
+				<iframe title="Inform COVID-19 Risk Index in Locations with a Humanitarian Response Plan" aria-label="map" id="datawrapper-chart-WIrV5" src="https://datawrapper.dwcdn.net/WIrV5/1/" scrolling="no" frameborder="0" style="border: none;" width="549" height="335"></iframe>
+			</section> 
+			<section id="doitwourself_simpleline" data-menu-title="Exploratory Data Visualisation">
+				<div class="header_bar centregreen">
+					<div class="header_title">03</div>
+				</div>
+				<h4>Create a Simple Line Chart</h4>
+				<p class="text-small"> Exploratory data visulualisation. 
 				</p>
-			</section>
+			</section> 
+			
 
 		<!-- SECTION 4 Best Practice -->
 			</div>
